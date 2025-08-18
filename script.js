@@ -254,7 +254,7 @@ btnSort.addEventListener("click", function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
-
+/*
 //convertion of string to number;
 
 console.log(Number("23"));
@@ -277,3 +277,15 @@ console.log(Number.isFinite(23 / 0));
 //for integers only
 console.log(Number.isInteger("20"));
 console.log(Number.isInteger(20));
+*/
+////////////////////////////////////////
+//Math.methods
+console.log(Math.sqrt(49));
+console.log(49 ** (1 / 2));
+console.log(8 ** (1 / 3));
+
+console.log(Math.max(1, 2, 3, "23", 4, 21)); //it does type coersion
+console.log(Math.min(1, 2, 0, "23", 4, 21));
+
+console.log(Math.PI * Number.parseInt("10rem") ** 2);
+console.log(Math.trunc(Math.random() * 10) + 1);
