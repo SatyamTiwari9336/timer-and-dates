@@ -309,3 +309,26 @@ console.log((2.768).toFixed(2));
 console.log(+(2.45).toFixed(0));
 
 */
+//remainder operator
+console.log(8 / 2);
+console.log(8 % 2);
+
+console.log(5 / 2);
+console.log(5 % 2);
+
+const iseven = (el) => el % 2 === 0;
+console.log(iseven(8));
+
+console.log(iseven(9));
+console.log(iseven(22));
+
+//number seperators on js
+const diameterofsun = 287_200_230_000;
+console.log(diameterofsun);
+
+const price = 23_500;
+console.log(price);
+
+const pi = 32_23.22;
+console.log(pi);
+//dont use it with parse int and is NaN s
