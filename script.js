@@ -308,7 +308,6 @@ console.log((23.5).toFixed(4));
 console.log((2.768).toFixed(2));
 console.log(+(2.45).toFixed(0));
 
-*/
 //remainder operator
 console.log(8 / 2);
 console.log(8 % 2);
@@ -347,3 +346,34 @@ console.log(20n > 15); //true
 console.log(20 === 20n); //false
 //math operation also dont work correctly withthem
 console.log(10n / 3n);
+/////////////////////////////////////////
+//dates
+const now = new Date();
+console.log(now);
+console.log(new Date("december 24 ,2025"));
+
+console.log(new Date(account1.movementsDates[0]));
+console.log(new Date(2037, 10, 5, 10, 8, 5));
+console.log(new Date(2037, 10, 33)); //nov 33 cahnged to dec 3
+
+console.log(new Date(0));
+console.log(new Date(3 * 24 * 60 * 60 * 1000));
+*/
+
+const future = new Date(2037, 10, 5, 10, 8);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getMinutes());
+console.log(future.getHours());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+
+console.log(future.getTime());
+console.log(new Date(2141008680000));
+console.log(Date.now());
+future.setFullYear(2040);
+console.log(future);
+//set month set date sset date also exist
