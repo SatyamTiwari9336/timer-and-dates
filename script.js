@@ -331,4 +331,19 @@ console.log(price);
 
 const pi = 32_23.22;
 console.log(pi);
-//dont use it with parse int and is NaN s
+//dont use it with parse int and is NaN
+///////////////////////////////////////////////////////
+//big ints
+console.log(2 ** 53 + 1);
+
+console.log(2846589360981857017589011390n);
+console.log(BigInt(284658936098n));
+//cannot mix big int with normal numbers
+console.log(3298589589275897328957n * 1000000n);
+const big = 2941092141749012589224n;
+const mult = 23;
+console.log(big * BigInt(mult));
+console.log(20n > 15); //true
+console.log(20 === 20n); //false
+//math operation also dont work correctly withthem
+console.log(10n / 3n);
