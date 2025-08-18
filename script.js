@@ -288,4 +288,18 @@ console.log(Math.max(1, 2, 3, "23", 4, 21)); //it does type coersion
 console.log(Math.min(1, 2, 0, "23", 4, 21));
 
 console.log(Math.PI * Number.parseInt("10rem") ** 2);
-console.log(Math.trunc(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
+// generating random numbers
+const randomint = (min, max) =>
+  Math.trunc(Math.random() * (max - min + 1)) + min;
+console.log(randomint(1, 7));
+console.log(randomint(10, 20));
+
+console.log(Math.round(23.3)); //23
+console.log(Math.round("23.7")); //24
+console.log(Math.trunc(24.72189)); //24 //removes decimal
+console.log(Math.floor(24.7534)); //24 //gives the nearest smaller interger
+console.log(Math.ceil(24.72189)); //25
+//all above methods do type coersion also
+console.log(Math.trunc(-24.72)); //-24
+console.log(Math.floor(-24.72)); //-25
