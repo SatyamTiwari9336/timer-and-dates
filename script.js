@@ -376,4 +376,4 @@ console.log(new Date(2141008680000));
 console.log(Date.now());
 future.setFullYear(2040);
 console.log(future);
-//set month set date sset date also exist
+//set month set date set date also exist
