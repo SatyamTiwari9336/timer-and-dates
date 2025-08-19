@@ -640,5 +640,5 @@ setInterval(function () {
 
 const calcdayspassed = (day1, day2) =>
   Math.abs(day2 - day1) / (1000 * 60 * 60 * 24);
-const newday = calcdayspassed(new Date(2037, 10, 4), new Date(2037, 10, 20));
+const newday = calcdayspassed(new Date(2037, 10, 4), new Date(2034, 10, 20));
 console.log(newday);
