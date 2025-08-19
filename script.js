@@ -638,6 +638,7 @@ setInterval(function () {
 }, 1000);
 */
 
+//By Own At Last
 const calcdayspassed = (day1, day2) =>
   Math.abs(day2 - day1) / (1000 * 60 * 60 * 24);
 const newday = calcdayspassed(new Date(2037, 10, 4), new Date(2034, 10, 20));
@@ -661,3 +662,26 @@ console.log(new5); //give result in hindi because of code hi-IN
 
 const locale = navigator.language;
 console.log(locale); //this gives code as per users net
+
+//intl on numbers
+
+const num = 21983478279;
+const options1 = {
+  style: "unit",
+  unit: "mile-per-hour",
+};
+console.log("usa     ", new Intl.NumberFormat("en-US", options1).format(num));
+console.log(
+  "inida           ",
+  new Intl.NumberFormat("hi-IN", options1).format(num)
+);
+console.log(
+  "arabic            ",
+  new Intl.NumberFormat("ar-SY", options1).format(num)
+);
+console.log(
+  "navigator.language  ",
+  new Intl.NumberFormat(navigator.language, options1).format(num)
+);
+
+const pass = "12345";
