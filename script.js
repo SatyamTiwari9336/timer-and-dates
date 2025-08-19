@@ -642,3 +642,22 @@ const calcdayspassed = (day1, day2) =>
   Math.abs(day2 - day1) / (1000 * 60 * 60 * 24);
 const newday = calcdayspassed(new Date(2037, 10, 4), new Date(2034, 10, 20));
 console.log(newday);
+//international formatter
+const new2 = new Date();
+let new3 = new Intl.DateTimeFormat("en-US").format(new2);
+console.log(new3);
+
+const new4 = new Date();
+const options = {
+  hour: "numeric",
+  minute: "numeric",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  weekday: "long",
+};
+let new5 = new Intl.DateTimeFormat("hi-IN", options).format(new2);
+console.log(new5); //give result in hindi because of code hi-IN
+
+const locale = navigator.language;
+console.log(locale); //this gives code as per users net
