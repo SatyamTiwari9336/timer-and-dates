@@ -684,7 +684,6 @@ console.log(
 );
 
 const pass = "12345";
-*/
 ////////////////////////////////////////////////////
 //setTimeout and setInterval
 
@@ -706,3 +705,4 @@ const timeinterval = setInterval(() => {
   console.log(now);
 }, 2000);
 //happens everytime after given interval
+*/
