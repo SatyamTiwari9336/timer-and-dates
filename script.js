@@ -636,7 +636,6 @@ setInterval(function () {
   const now = new Date();
   console.log(now);
 }, 1000);
-*/
 
 //By Own At Last
 const calcdayspassed = (day1, day2) =>
@@ -685,3 +684,14 @@ console.log(
 );
 
 const pass = "12345";
+*/
+////////////////////////////////////////////////////
+//setTimeout and setInterval
+setTimeout(
+  (arg1, arg2) => {
+    console.log(`your pizza is here with ${arg1} and ${arg2}🍕🍕`);
+  },
+  3000,
+  "olives",
+  "spinach"
+);
