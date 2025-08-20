@@ -687,11 +687,22 @@ const pass = "12345";
 */
 ////////////////////////////////////////////////////
 //setTimeout and setInterval
-setTimeout(
+
+const ingredients = ["olive", "spinach"];
+const pizzaTimer = setTimeout(
   (arg1, arg2) => {
     console.log(`your pizza is here with ${arg1} and ${arg2}🍕🍕`);
   },
   3000,
-  "olives",
-  "spinach"
+  ...ingredients
 );
+
+if (ingredients.includes("spinach")) {
+  clearTimeout(pizzaTimer); //to stop timer from happening we use cleartimeout
+}
+
+const timeinterval = setInterval(() => {
+  const now = new Date();
+  console.log(now);
+}, 2000);
+//happens everytime after given interval
